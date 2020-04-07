@@ -80,6 +80,12 @@ call plug#end()
 "To reflect the dracula in vim, add the following to 'call plug#end()'
 color dracula
 
-
+"Snippets system
 "Specify the directory for your own snippet
 let g:neosnippet#snippets_directory='~/.vim/bundle/neosnippet-snippets/snippets/ , ~/.vim/snippets'
+"Enabling neocomplcache at startup
+let g:neocomplcache_enable_at_startup = 1
+"Key-mapping for insert mode
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+"Key mapping for select mode
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
