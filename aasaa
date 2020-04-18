@@ -1,0 +1,54 @@
+[1mdiff --git a/bashrc b/bashrc[m
+[1mindex 6b44cca..6193f76 100644[m
+[1m--- a/bashrc[m
+[1m+++ b/bashrc[m
+[36m@@ -117,3 +117,7 @@[m [mif ! shopt -oq posix; then[m
+ fi[m
+ [m
+ [m
+[32m+[m
+[32m+[m[32mexport NVM_DIR="$HOME/.nvm"[m
+[32m+[m[32m[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm[m
+[32m+[m[32m[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion[m
+[1mdiff --git a/scripts/install.sh b/scripts/install.sh[m
+[1mindex a8a9928..1519e00 100755[m
+[1m--- a/scripts/install.sh[m
+[1m+++ b/scripts/install.sh[m
+[36m@@ -6,3 +6,8 @@[m [msudo apt-get install curl -y[m
+ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \[m
+     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim[m
+ sudo apt-get install tree -y[m
+[32m+[m[32mcurl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash[m
+[32m+[m[32msudo apt-get install build-essential[m
+[32m+[m[32msudo apt-get install libssl-dev[m
+[32m+[m[32mcurl -L https://go.microsoft.com/fwlink/?LinkID=760868 -o vscode.deb[m
+[32m+[m[32msudo apt install ./vscode.deb[m
+[1mdiff --git a/vim/.netrwhist b/vim/.netrwhist[m
+[1mindex 59329d0..12d6065 100644[m
+[1m--- a/vim/.netrwhist[m
+[1m+++ b/vim/.netrwhist[m
+[36m@@ -1,5 +1,6 @@[m
+ let g:netrw_dirhistmax  =10[m
+[31m-let g:netrw_dirhist_cnt =3[m
+[32m+[m[32mlet g:netrw_dirhist_cnt =4[m
+ let g:netrw_dirhist_1='/home/o-xian/.vim'[m
+ let g:netrw_dirhist_2='/home/o-xian/dotfiles/.vim'[m
+ let g:netrw_dirhist_3='/home/o-xian/dotfiles/.vim/plugged/neocomplcache/plugin/neocomplcache'[m
+[32m+[m[32mlet g:netrw_dirhist_4='/home/o-xian/works/oxia-blog/content'[m
+[1mdiff --git a/vim/.vimrc b/vim/.vimrc[m
+[1mindex d653e19..e41b69a 100644[m
+[1m--- a/vim/.vimrc[m
+[1m+++ b/vim/.vimrc[m
+[36m@@ -74,6 +74,12 @@[m [mcall plug#begin('~/.vim/plugged') "Specify where to save the plugin in ('').[m
+   Plug 'Shougo/neocomplcache'[m
+   Plug 'Shougo/neosnippet.vim'[m
+   Plug 'Shougo/neosnippet-snippets'[m
+[32m+[m[32m  "Install React tools[m
+[32m+[m[32m  Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }[m
+[32m+[m[32m  Plug 'othree/yajs.vim', { 'for': ['javascript', 'javascript.jsx'] }[m
+[32m+[m[32m  Plug 'othree/es.next.syntax.vim', { 'for': ['javascript', 'javascript.jsx'] }[m
+[32m+[m[32m  Plug 'othree/javascript-libraries-syntax.vim', { 'for': ['javascript', 'javascript.jsx'] }[m
+[32m+[m[32m  Plug 'maxmellon/vim-jsx-pretty', { 'for': ['javascript', 'javascript.jsx'] }[m
+ call plug#end()[m
+ [m
+ [m
