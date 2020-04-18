@@ -1,2 +1,3 @@
-[include]
-  path = .gitconfig.user
+[user]
+  email = o-xian@onoyama1999910@gmail.com
+  name = o-xian 
