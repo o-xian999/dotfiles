@@ -1,8 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/home/o-xian/.vim'
-let g:netrw_dirhist_2='/home/o-xian/dotfiles/.vim'
-let g:netrw_dirhist_3='/home/o-xian/dotfiles/.vim/plugged/neocomplcache/plugin/neocomplcache'
-let g:netrw_dirhist_4='/home/o-xian/works/oxia-blog/content'
-let g:netrw_dirhist_5='/home/o-xian/works/oxia-blog/src/gatsby-theme-blog/gatsby-plugin-theme-ui'
-let g:netrw_dirhist_6='/home/o-xian/works/gatsby-starter-hero-blog/content'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/home/o-xian/works/blog/content'
+let g:netrw_dirhist_2='/home/o-xian/works/proken/.git'
