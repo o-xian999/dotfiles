@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/home/o-xian/works/blog/content'
 let g:netrw_dirhist_2='/home/o-xian/works/proken/.git'
 let g:netrw_dirhist_3='/usr/local/etc'
+let g:netrw_dirhist_4='/home/o-xian/works/o-xian/my-blog/content/posts'
