@@ -1,0 +1,7 @@
+[include]
+    path = .gitconfig.user
+[alias]
+    br = branch
+    ga = log --graph --decorate --oneline --all
+    st = status
+    sw = switch
