@@ -1,8 +1,0 @@
-[user]
-  email = onoyama1999910@gmail.com
-  name = o-xian 
-[alias]
-  ga = log --graph --decorate --oneline --all
-  s  = status
-  br = branch
-  sw = switch
