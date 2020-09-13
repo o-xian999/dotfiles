@@ -5,4 +5,5 @@
  ln -sf ~/dotfiles/bash_profile ~/.bash_profile
  ln -sf ~/dotfiles/gitconfig ~/.gitconfig
  ln -sf ~/dotfiles/gitconfig.user ~/.gitconfig.user
+ ln -sf ~/dotfiles/nvim/ ~/.config/nvim
  echo "Symbolic link done!"
