@@ -92,7 +92,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias clipboard='xsel --clipboard --input'
-alias studio='sh ~/Downloads/android-studio/bin/studio.sh'
+alias update='sh ~/dotfiles/scripts/update.sh'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
