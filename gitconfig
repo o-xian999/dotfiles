@@ -5,3 +5,5 @@
     ga = log --graph --decorate --oneline --all
     st = status
     sw = switch
+[core]
+    editor = vim
